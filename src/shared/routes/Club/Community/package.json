@@ -1,0 +1,6 @@
+{
+  "name": "Community",
+  "main": "./AsyncCommunity.jsx",
+  "version": "0.0.0",
+  "private": true
+}

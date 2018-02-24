@@ -1,0 +1,17 @@
+@import "styles/Variables.scss";
+
+.middle-area {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  max-width: $screen-xs-min;
+}
+
+.oc-content-page-lg-font {
+  font-size: 15px;
+}

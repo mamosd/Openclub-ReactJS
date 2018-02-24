@@ -1,0 +1,282 @@
+@import 'styles/Variables';
+@import 'styles/Mixins';
+
+* { box-sizing: border-box; }
+.video-container {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 0;
+}
+.video-container,
+.video-container > div > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-container { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-container { width: 300%; left: -100%; }
+}
+.home-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 55px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  a {
+    color: #ffffff;
+    text-decoration: underline
+  }
+  @media #{$min-desktop} {
+    color: #1d1d1d;
+    a {
+      color: #1d1d1d;
+    }
+  }
+}
+.container-content {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #008FCC;
+  @media #{$min-desktop} {
+    background-color: white;
+    background-image: url('https://a.whack.wtf/openclub/images/blue_landing.png');
+    background-size: 110% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+.home-intro {
+  .logo {
+    width: 80%;
+    @media #{$min-desktop} {
+      height: 100px;
+      width: auto;
+    }
+  }
+  h1 { display: none }
+  .btn { display: none }
+  .text {
+    text-align: center;
+    vertical-align: middle;
+    .links {
+      display: none;
+      font-size: 15px;
+      width: 100%;
+      text-align: center;
+      a {
+        color: white;
+        padding-right: 5px;
+        padding-left: 5px;
+        display: inline-block;
+        border-right: 1px solid white;
+      }
+      a:last-of-type {
+        border-right: none;
+      }
+    }
+    hr {
+      display: none;
+    }
+    @media #{$min-desktop} {
+      display: block;
+      text-align: left;
+      margin: 20px;
+      h1 {
+        display: block;
+        color: white;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+        margin-bottom: 40px;
+        @media #{$min-desktop-lg} {
+           font-size: 35px;
+        }
+      }
+      .links {
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+      }
+      .btn {
+        transition: background-color 0.25s, color 0.15s;
+        display: block;
+        background-color: transparent;
+        border: 2px solid #ffffff !important;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        margin: 5px;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        font-size: 18px;
+        border-radius: 2px;
+        max-width: 50%;
+        margin: auto;
+        &:hover {
+          background-color: #ffffff;
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
+.home-title {
+  margin-top: 50px;
+  @media #{$min-desktop} {
+    margin-top: 100px;
+  }
+}
+.home-login {
+  @media #{$min-desktop} {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}
+.auth0-lock-last-login-pane {
+  margin-top: 100px;
+}
+.login {
+  .auth0-lock.auth0-lock .auth0-lock-content {
+    padding: 0px;
+    top:10px;
+  }
+  .auth0-lock.auth0-lock, .auth0-lock.auth0-lock * {
+    box-sizing: border-box;
+  }
+  .auth0-lock.auth0-lock .auth0-lock-cred-pane {
+    border-radius: 0px;
+  }
+  .auth0-lock.auth0-lock.auth0-lock-opened-in-frame {
+    width: 100% !important;
+  }
+  .auth0-lock.auth0-lock .auth0-lock-widget {
+    width: 100% !important;
+    border-radius: 0;
+  }
+  .auth0-lock {
+    &.auth0-lock-opened-in-frame {
+      width: 100%;
+    }
+    .auth0-lock-widget {
+      min-width: 100%;
+      width: 100% !important;
+      border-radius: 0;
+      .auth0-lock-widget-container {
+        .auth0-lock-cred-pane {
+          background: transparent;
+          padding-top: 20px;
+          .auth0-lock-quiet {
+            padding: 20px;
+          }
+        }
+        .auth0-lock-header {
+          display: none;
+        }
+        .auth0-lock-submit {
+          transition: background-color 0.25s, color 0.15s;
+          background-color: transparent !important;
+          border: 1px solid rgba(255, 255, 255, 0.7);
+          border-radius: 2px;
+          margin-top: 15px;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 16px;
+          span > svg {
+            display: none;
+          }
+          &:hover {
+            background-color: white !important;
+            color: $brand-color;
+          }
+        }
+        .auth0-lock-body-content {
+          padding: 0;
+          .auth0-lock-form {
+            .auth0-lock-social-button {
+              height: 50px;
+              border-radius: 2px;
+            }
+            .auth0-lock-social-button-text {
+              font-size: 15px;
+              text-transform: none;
+              padding-left: 65px;
+            }
+            .auth0-lock-social-button-icon {
+              height: 50px;
+              width: 50px;
+              color: white;
+            }
+            .auth0-lock-social-button.auth0-lock-social-big-button[data-provider="auth0"] {
+              background-color: #00b3ff
+            }
+            p {
+              color: white;
+              font-size: 15px;
+            }
+            .auth0-lock-alternative-link {
+              color: white;
+              font-size: 15px;
+            }
+            .auth0-lock-input-wrap {
+              background: transparent;
+              border: 1px solid rgba(255,255,255,0.7);
+              border-radius: 2px;
+              transition: 0.25s border-color;
+              padding-left: 0;
+              &.auth0-lock-focused {
+                border: 1px solid white;
+              }
+              span {
+                display: none;
+              }
+            }
+            .auth0-lock-input {
+              height: 50px;
+              background: transparent;
+              color: white;
+              border-radius: 2px;
+            }
+            .auth0-lock-input::placeholder {
+              color: #fff;
+            }
+          }
+          .auth0-lock-tabs-container {
+            .auth0-lock-tabs {
+              font-size: 19px;
+              padding: 0 20px;
+              background: transparent;
+              a {
+                color: white;
+              }
+              li {
+                color: rgba(255,255,255,0.8);
+                box-shadow: 0 2px 0 0 rgba(255,255,255,0.8);
+              }
+              li.auth0-lock-tabs-current {
+                color: white;
+                box-shadow: 0 4px 0 0 #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "babel",
+    "react",
+    "promise"
+  ],
+  "env": {
+    "browser" : true
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "rules": {
+    "react/jsx-quotes": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "max-len": 0,
+    "comma-dangle": 0,
+    "quote-props": 0,
+    "react/sort-comp": 0,
+    "prefer-template": 0,
+    "prefer-const": 0,
+    "react/jsx-no-bind": 0,
+    "indent": 0,
+    "no-trailing-spaces": 0,
+    "quotes": 0,
+    "react/jsx-indent-props": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/jsx-space-before-closing": 0,
+    "object-curly-spacing": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "semi": 0,
+    "import/no-named-as-default": 0,
+    "global-require": 0,
+    "no-useless-constructor": 0,
+    "react/prefer-stateless-function": 0,
+    "new-cap": 0,
+    "arrow-parens": 0,
+    "react/forbid-prop-types": 0,
+    "no-param-reassign": 0,
+    "no-underscore-dangle": 0,
+    "consistent-return": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-use-before-define": 2,
+    "react/require-default-props": 0,
+    "import/extensions": 0,
+    "no-confusing-arrow": 0,
+  }
+}

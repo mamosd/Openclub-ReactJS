@@ -1,0 +1,6 @@
+{
+  "name": "notifications",
+  "main": "./reducer.js",
+  "version": "0.0.0",
+  "private": true
+}

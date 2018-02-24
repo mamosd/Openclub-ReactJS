@@ -1,0 +1,16 @@
+@import "styles/Variables.scss";
+
+.oc-content-page {
+  padding: 10px;
+  background: #fff;
+  @media #{$min-desktop} {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+.oc-content-page-lg-font {
+  font-size: 15px;
+}

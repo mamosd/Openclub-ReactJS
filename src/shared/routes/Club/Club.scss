@@ -1,0 +1,11 @@
+@import 'styles/Variables';
+
+.container-club {
+  width: auto;
+  padding: 20px;
+}
+.club-hero {
+  @media #{$max-tablet} {
+    display: none;
+  }
+}

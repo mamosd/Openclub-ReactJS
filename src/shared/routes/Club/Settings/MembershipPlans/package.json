@@ -1,0 +1,6 @@
+{
+  "name": "MembershipPlans",
+  "main": "./AsyncMembershipPlans.jsx",
+  "version": "0.0.0",
+  "private": true
+}

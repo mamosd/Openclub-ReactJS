@@ -1,0 +1,125 @@
+@import "styles/Variables.scss";
+
+.objectpage-header-container {
+  height: 240px;
+  position: relative;
+  transition: height 0.25s;
+
+  .banner-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(/coverphoto.jpg);
+    background-position: center center;
+    background-size: cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+  .header-details {
+    position: absolute;
+    display: table;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(180deg, transparent, transparent 80%, rgba(0,0,0,0.1));
+    .media {
+      align-self: center;
+    }
+    .media-left {
+      padding-right: 20px;
+    }
+    .details-container {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+    .header-buttons, .header-buttons > div {
+      display: table-cell;
+      white-space: nowrap;
+      vertical-align: bottom;
+      button {
+        margin: 0px 5px;
+      }
+    }
+
+    @media #{$max-tablet} {
+      .details-container {
+        display: flex;
+      }
+      .header-buttons, .header-buttons > div {
+        display: flex;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        button {
+          flex-grow: 1;
+          border-radius: 0px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &.collapsed {
+    height: 50px;
+    .profile-backdrop {
+      padding: 0;
+      border-radius: 0;
+      background-color: #fff;
+      box-shadow: none;
+    }
+    .background {
+      filter: blur(2px);
+      background-size: 120% !important;
+    }
+    .header-details {
+      padding: 0px 0;
+      background: transparent;
+      position: absolute;
+    }
+    .media-object {
+      height: 50px;
+    }
+    .objectpage-heading {
+      margin-top: auto;
+      margin-bottom: auto;
+      height: 38px;
+    }
+    .header-buttons {
+      vertical-align: middle;
+    }
+  }
+
+  .img-round-corners {
+    border-radius: 12px;
+  }
+
+  .profile-backdrop {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.5);
+  }
+
+  .objectpage-label {
+    color: white;
+    text-shadow: 0px 2px 1px black;
+  }
+
+  .objectpage-heading {
+    margin: 0;
+  }
+
+
+  .join-button {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,44 @@
+.category-carousel {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  .category-container {
+    padding: 15px;
+    .category-card {
+      width: 160px;
+      height: 90px;
+      border-radius: 5px;
+      background-color: grey;
+      color: white;
+      display: inline-block;
+      line-height: 90px;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      font-weight: 600;
+      margin: 10px;
+      box-shadow: 0px 4px 18px #888888;
+      &:hover {
+        color: white;
+        transform: scale(1.05);
+      }
+      &.sport {
+        background: linear-gradient(to bottom right, #B4ED50, #429321);
+      }
+      &.motorsport {
+        background: linear-gradient(to bottom right, #3023AE, #C96DD8);
+      }
+      &.university {
+        background: linear-gradient(to bottom right, #53A0FE, #6FB7CB);
+      }
+      &.technology {
+        background: linear-gradient(to bottom right, #4F4F4F, #000000);
+      }
+      &.music {
+        background: linear-gradient(to bottom right, #E851F5, #77039F);
+      }
+    }
+  }
+}

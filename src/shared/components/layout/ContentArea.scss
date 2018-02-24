@@ -1,0 +1,8 @@
+@import "styles/Variables.scss";
+
+.oc-content-area {
+  padding: 0px;
+  @media #{$min-desktop} {
+    padding: 20px;
+  }
+}

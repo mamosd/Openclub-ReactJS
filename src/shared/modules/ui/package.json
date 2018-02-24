@@ -1,0 +1,6 @@
+{
+  "name": "ui",
+  "main": "./reducer.js",
+  "version": "0.0.0",
+  "private": true
+}

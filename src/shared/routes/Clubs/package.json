@@ -1,0 +1,6 @@
+{
+  "name": "Clubs",
+  "main": "./AsyncClubs.jsx",
+  "version": "0.0.0",
+  "private": true
+}

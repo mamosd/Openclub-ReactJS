@@ -1,0 +1,153 @@
+@import "styles/Variables.scss";
+
+// .oc-table {
+//   min-width: 300px;
+//   width: 100%;
+//   margin-bottom: 20px;
+//
+//   tr {
+//     border: 1px solid #e9e9e9;
+//   }
+//
+//   th {
+//     display: none;
+//   }
+//
+//   td {
+//     display: block;
+//     height: 1px;
+//
+//     &:first-child {
+//       padding-top: .5em;
+//     }
+//     &:last-child {
+//       padding-bottom: .5em;
+//     }
+//
+//     &:before {
+//       content: attr(data-th)": ";
+//       font-weight: bold;
+//
+//       width: 6.5em;
+//       display: inline-block;
+//
+//
+//       @media #{$max-mobile} {
+//         display: none;
+//       }
+//     }
+//   }
+//
+//   th, td {
+//     text-align: left;
+//
+//     @media #{$max-mobile} {
+//       display: table-cell;
+//       padding: 10px;
+//
+//       &:first-child {
+//         padding-left: 0;
+//       }
+//
+//       &:last-child {
+//         padding-right: 0;
+//       }
+//     }
+//   }
+// }
+//
+
+.oc-table {
+  margin: 1em 0;
+  width: 100%;
+  min-width: 300px; // adjust to your needs
+  vertical-align: top;
+  border: 1px solid #e9e9e9;
+  empty-cells: show;
+  border-collapse: collapse;
+  .oc-table {
+    border: none;
+
+  }
+
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!
+  }
+
+  td {
+    display: block;
+
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+
+      @media (min-width: $screen-xs-min) {
+        display: none;
+      }
+    }
+  }
+
+  th, td {
+    text-align: left;
+
+    @media (min-width: $screen-xs-min) {
+      display: table-cell;
+      padding: .25em .5em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+}
+
+/* tables in tables */
+@media #{$min-desktop} {
+  .oc-table .oc-table {
+    border-collapse: collapse;
+    margin: 0;
+    height: 100%;
+
+    tr {
+      border-top: none;
+      border-bottom: none;
+    }
+
+    tr:first-child td {
+      border-top: none;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr td:first-child,
+    tr th:first-child {
+      border-left: none;
+    }
+    tr td:last-child,
+    tr th:last-child {
+      border-right: none;
+    }
+  }
+}

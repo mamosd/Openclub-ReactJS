@@ -1,0 +1,147 @@
+@import './Variables';
+
+// theming overrides
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+}
+a {
+  color: $brand-color;
+}
+
+.ant-layout {
+  overflow-x: hidden;
+}
+
+.text-muted {
+  font-weight: 100;
+}
+
+.ant-layout-content {
+  overflow-x: hidden;
+  margin-top: 50px;
+}
+
+.ant-tabs-bar {
+  margin-bottom: 0;
+}
+
+.max-form {
+  @media #{$min-desktop} {
+    max-width: $screen-xs-min;
+  }
+}
+
+.ant-btn-danger {
+  color: #ffffff;
+  background-color: #f04134;
+  border-color: #f04134;
+  &:hover {
+    background-color: #d73435;
+    border-color: #d73435;
+  }
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background-color: $brand-color;
+  border-color: $brand-color;
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+  background-color: $brand-color;
+}
+.auth0-lock-badge-bottom {
+  display: none;
+}
+.auth0-lock-name {
+  display: none;
+}
+.auth0-lock.auth0-lock .auth0-lock-header {
+  height: auto;
+}
+.auth0-lock.auth0-lock .auth0-lock-header-bg {
+  height: 100%;
+}
+.ant-tabs-nav-scroll {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.ant-tabs-extra-content {
+  margin: 1px 2px 0 0;
+}
+.ant-tabs-bar {
+  background: white;
+}
+.ant-tabs-nav-container {
+  margin-bottom: 0
+}
+
+.ant-menu-inline .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-item {
+  font-size: 14px;
+}
+
+.ant-radio-wrapper {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.ant-alert {
+  font-size: 14px;
+}
+
+.bottom-gap {
+  margin-bottom: 15px;
+}
+
+.bottom-gap-large {
+  margin-bottom: 25px;
+}
+
+.oc-form {
+  // max-width: 600px;
+}
+.ant-table {
+  font-size: 14px;
+  i {
+    font-size: 16px;
+  }
+}
+.ant-checkbox-wrapper {
+  font-size: 15px;
+}
+.ant-checkbox-inner {
+  width: 18px;
+  height: 18px;
+}
+.ant-checkbox-checked .ant-checkbox-inner:after {
+  left: 5px;
+  width: 6px;
+  height: 11px;
+}
+.ant-timeline-item-head-custom {
+  font-size: 18px;
+}
+.ant-timeline-item-content {
+  font-size: 14px;
+}
+.ant-select {
+  font-size: 15px;
+}
+.ant-select-selection--multiple > ul > li, .ant-select-selection--multiple .ant-select-selection__rendered > ul > li {
+  margin-top: 0px;
+  height: 25px;
+  line-height: 25px;
+}
+.ant-btn-lg {
+  border-radius: 1px;
+}
+
+.btn-group {
+  display: flex;
+  width: 100%;
+  .btn {
+    flex-grow: 1;
+  }
+}

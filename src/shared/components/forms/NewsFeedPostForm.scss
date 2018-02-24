@@ -1,0 +1,27 @@
+.newsfeed-post {
+  textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 100%;
+  }
+  .ant-spin, .embed {
+    display: inline-block;
+    width: 100%;
+    background-color: #f6fbfe;
+    padding: 7px;
+    border-radius: 2px;
+  }
+  .ant-spin-dot {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttons {
+    margin-top: 5px;
+    text-align: right;
+    button {
+      margin-left: 10px;
+    }
+  }
+}

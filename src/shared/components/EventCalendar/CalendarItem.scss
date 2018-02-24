@@ -1,0 +1,113 @@
+.event-card {
+  height: 72px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  &.expanded {
+    height: auto;
+  }
+}
+.event-card, .event-card > .card-item {
+  min-height: 72px;
+}
+.liked {
+  color: #de77bd;
+}
+.event-details-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+.date-icon-container {
+  min-width: 72px;
+  height: 72px;
+  padding: 0;
+  margin: 0px;
+  border-radius: 1px;
+  order: 1;
+  .month {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    background: #E8574E;
+    color: white;
+    line-height: 12px;
+  }
+  .day {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: #2b2b2b;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+}
+.event-details {
+  padding: 2px 2px 2px 8px;
+  order: 2;
+  flex-grow: 2;
+  height: 72px;
+  display: table-cell;
+  vertical-align: middle;
+  h5 {
+    margin: 3px 3px 3px 3px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+}
+.event-options-container {
+}
+.event-options {
+  line-height: 14px;
+  font-size: 14px;
+  order: 3;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 10px;
+  small {
+    text-transform: uppercase;
+    line-height: 10px;
+    font-size: 10px;
+    float: right;
+  }
+}
+.event-expansion {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  align-content: stretch;
+  align-items: center;
+  .event-e-photo {
+    order: 1;
+    padding: 5px;
+    flex-shrink: 2;
+  }
+  .event-e-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    order: 2;
+    flex-grow: 2;
+    max-height: 100px;
+  }
+  .event-e-buttons {
+    order: 3;
+  }
+}

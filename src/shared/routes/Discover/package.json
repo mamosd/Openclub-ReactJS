@@ -1,0 +1,6 @@
+{
+  "name": "Discover",
+  "main": "./AsyncDiscover.jsx",
+  "version": "0.0.0",
+  "private": true
+}

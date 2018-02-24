@@ -1,0 +1,49 @@
+@import 'styles/Variables.scss';
+
+body {
+  background-color: $body-bg;
+}
+.oc-object-page-container {
+  max-width: 1000px;
+  border-right: 1px solid #c0c0ca;
+  border-left: 1px solid #c0c0ca;
+  min-height: calc(100vh - 50px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.rc-drawer-sidebar {
+  top: 50px !important;
+  transform: translateX(-100%);
+}
+.rc-drawer-draghandle {
+  background-color: transparent;
+}
+.rc-drawer-content {
+  left: 0;
+}
+.open {
+  .rc-drawer-sidebar {
+    transform: translateX(0%) !important;
+  }
+}
+.loader {
+  display: table;
+  width: 100%;
+  height: calc(100vh - 50px);
+  .middle {
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 200px;
+    display: table-cell
+  }
+}
+@media #{$min-desktop} {
+  .loggedin {
+    .rc-drawer-sidebar {
+      transform: translateX(0%) !important;
+    }
+    .rc-drawer-content {
+      margin-left: 240px;
+    }
+  }
+}

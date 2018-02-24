@@ -1,0 +1,9 @@
+ul.credit-card-list {
+  width: 100%;
+  li.card-li {
+    height: 30px;
+    &:nth-child(even) {
+      background-color: #fcfcfc;
+    }
+  }
+}

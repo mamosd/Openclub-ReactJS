@@ -1,0 +1,6 @@
+{
+  "main": "./AsyncEvents.jsx",
+  "name": "AsyncEvents",
+  "private": true,
+  "version": "0.0.0"
+}

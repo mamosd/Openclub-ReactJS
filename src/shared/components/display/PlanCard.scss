@@ -1,0 +1,25 @@
+.plan-card {
+  margin: 20px 0px;
+  .ant-card-body {
+    padding: 0px;
+  }
+  .description {
+    padding: 20px;
+  }
+  .pricing {
+    text-align: center;
+    padding: 20px;
+    h1 {
+      line-height: 40px;
+      font-size: 24px;
+      font-weight: 300;
+    }
+    small {
+      font-size: 100%;
+    }
+    .ant-select {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

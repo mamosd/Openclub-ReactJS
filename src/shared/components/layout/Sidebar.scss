@@ -1,0 +1,59 @@
+@import 'styles/Variables';
+
+.oc-sidebar {
+  width: $sidebar-wd;
+  background-color: $sidebar-bg;
+  height: 100%;
+  color: #fff;
+}
+.oc-sidebar-profile {
+  padding: 30px 20px;
+  text-align: center;
+}
+.oc-sidebar-profile--img {
+  border-radius: 5px;
+}
+.opt-events {
+  background: #e26b45!important;
+}
+.opt-clubs {
+  background: #8fc352!important;
+}
+.opt-profile {
+  background: #ffffff!important;
+  color: #222!important;
+}
+.opt-notifications {
+  background: #00bcd4!important
+}
+.thumb64 {
+  width: 64px;
+  height: 64px;
+}
+.oc-sidebar-menu {
+  width: $sidebar-wd;
+  .ant-badge {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+.oc-sidebar-clubimage {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+.ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background: $brand-color;
+  color: white;
+  line-height: 32px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-item, .ant-menu-dark.ant-menu-vertical .ant-menu-item {
+  font-size: 15px;
+}

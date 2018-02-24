@@ -1,0 +1,15 @@
+.category-container {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.category {
+  display: inline-block !important;
+}
+.ant-row-flex {
+  .infinite-scroll-component {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
